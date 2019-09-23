@@ -1,0 +1,441 @@
+/*设置页面背景色*/
+body{
+	background-color: #e6e6e6;
+}
+/*设置head的样式*/
+.head{
+	height: 0.95rem;
+	background-color: #fff;
+}
+.head img{
+	height: 0.95rem;
+}
+/*设置头部搜索和列表字体图标的样式*/
+.icon-sousuo,.icon-list{
+	font-size: 0.35rem;
+	color: #004098;
+	position: relative;
+	display: block;
+}
+.icon-list{
+	font-size: 0.5rem;
+	margin: 0 0.16rem 0 0.1rem;
+}
+/*设置head_right的样式*/
+.head_right{
+	display: flex;
+	height: 0.95rem;
+	align-items: center;
+}
+/*设置遮罩层mask的样式*/
+.mask{
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+	background-color: rgba(178,178,178,0.5);
+	display: none;
+	z-index: 99;
+}
+/*设置三角形triangle1的样式*/
+.triangle1{
+    width: 0;
+    height: 0;
+    border: 0.18rem solid red;
+    border-top: none;
+    border-bottom-color: white;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+	top: 1.25rem;
+	right: 0.75rem;
+	transition: all 0.1s;
+	opacity: 0;
+}
+/*设置搜索框search_ipt的样式*/
+.search_ipt{
+	width: 7.1rem;
+	height: 0.75rem;
+	background-color: white;
+	border-radius: 0.1rem;
+	position: absolute;
+	top: 0.18rem;
+	left: -6.35rem;
+	text-align: center;
+	line-height: 0.75rem;
+}
+.search_ipt input{
+	font-size: 0.24rem;
+	width: 87%;
+	height: 0.5rem;
+	border-bottom: 0.01rem solid #d1d1d1;
+	text-indent: 0.1rem;
+	padding-right: 0.5rem;
+}
+.search_ipt>.iconfont{
+	font-size: 0.42rem;
+	color: #999;
+	position: absolute;
+	right: 0.3rem;
+	top: 0;
+}
+/*设置三角形triangle2的样式*/
+.triangle2{
+    width: 0;
+    height: 0;
+    border: 0.18rem solid red;
+    border-top: none;
+    border-bottom-color: white;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+	top: 0.95rem;
+	right: 0.26rem;
+}
+/*给search_move添加向上移动效果*/
+.search_move{
+	top: 0.95rem;
+}
+/*设置菜单menu的样式*/
+.menu{
+	width: 2rem;
+	background-color: #fff;
+	position: absolute;
+	top: 0.18rem;
+	left: -1.60rem;
+	color: #999;
+}
+/*设置menu下li的样式*/
+.menu li{
+	font-size: 0.26rem;
+	height: 0.6rem;
+	padding-left: 0.25rem;
+	line-height: 0.75rem;
+	display: flex;
+	align-items: center;
+}
+/*设置menu下iconfont的样式*/
+.menu .iconfont{
+	font-size: 0.36rem;
+	margin-right: 0.1rem;
+}
+.menu .icon-chanpinzhongxin{
+	font-size: 0.4rem;
+}
+.menu .icon-jiejuefangansvg{
+	font-size: 0.44rem;
+	margin-right: 0.05rem;
+}
+.menu .icon-gongsixinwen{
+	font-size: 0.32rem;
+	margin-left: 0.05rem;
+}
+.menu .icon-xiaoxi{
+	font-size: 0.34rem;
+}
+/*设置menu的高亮样式*/
+.menu .on1{
+	background-color: #183884;
+	color: #fff;
+}
+/*设置slideBox的样式*/
+.slideBox{
+	width: 7.5rem;
+	height: 5rem;
+	overflow: hidden;
+	position: relative;
+	z-index: 98;
+}
+/*设置pic下img的样式*/
+.pic img{
+	display: block;
+	width: 7.5rem;
+	height: 5rem;
+}
+.slideBox .hd{ 
+	position:absolute;
+	bottom:0.4rem; 
+	left:50%; 
+	margin-left: -0.3rem;
+	z-index:1; 
+}
+.slideBox .hd li{
+    display: inline-block;
+    width: 0.1rem;
+    height: 0.1rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 0.01rem solid #183884;
+    background: #fff;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin: 0 0.1rem;
+}
+.slideBox .hd li.on{ 
+	background:#183884;  
+}
+/*设置nav的样式*/
+.nav{
+	display: flex;
+	justify-content: space-between;
+}
+/*设置about的样式*/
+.about{
+	width: 1.86rem;
+	height: 2.07rem;
+	background-color: #fff;
+	flex-wrap: wrap;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+/*设置about_huaxin、about_chanpin、about_jiejue、about_lianxi的样式*/
+.about_huaxin,.about_chanpin,.about_jiejue,.about_lianxi{
+	width: 0.9rem;
+	height: 0.9rem;
+	border-radius: 0.1rem;
+	text-align: center;
+	line-height: 0.9rem;
+	color: #fff;
+}
+.about_huaxin{
+	background-color: #28b1f9;
+}
+.about_chanpin{
+	background-color: #ff8d3a;
+}
+.about_jiejue{
+	background-color: #6fd700;
+}
+.about_lianxi{
+	background-color: #ff6868;
+}
+.about_huaxin .iconfont{
+	font-size: 0.5rem;
+}
+.about_chanpin .iconfont,.about_jiejue .iconfont{
+	font-size: 0.6rem;
+}
+.about_lianxi .iconfont{
+	font-size: 0.46rem;
+}
+/*设置about下p的样式*/
+.about p{
+	font-size: 0.26rem;
+	line-height: 0.46rem;
+}
+/*设置new_hot的样式*/
+.new_hot{
+	height: 1.2rem;
+	background-color: #fff;
+	margin: 0.1rem 0;
+	display: flex;
+	align-items: center;
+	padding: 0 0.3rem 0 0.45rem;
+}
+/*设置news_tit的样式*/
+.news_tit{
+	font-size: 0.3rem;
+	color: red;
+	padding-right: 0.2rem;
+	margin-right: 0.18rem;
+	width: 1.56rem;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	border-right: 0.02rem solid #ccc;
+	flex-wrap: nowrap;
+}
+.new_hot .iconfont{
+	font-size: 0.3rem;
+	color: red;
+	margin-right: 0.1rem;
+}
+.new_hot p{
+	font-size: 0.22rem;
+	color: #666;
+	line-height: 0.34rem;
+}
+/*设置shops_tit的高、相对定位背景色*/
+.shops_tit{
+	height: 0.75rem;
+	background-color: #fff;
+	position: relative;
+	margin-bottom: 0.02rem;
+}
+/*设置tit_box的绝对定位*/
+.tit_box{
+	position: absolute;
+	top: 0.13rem;
+	left: 0;
+	width: 100%;
+}
+/*设置tits的样式*/
+.tits{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+/*设置tits下li的样式*/
+.tits li{
+	box-sizing: border-box;
+	padding: 0 0.03rem;
+	font-size: 0.26rem;
+	color: #183884;
+	height: 0.66rem;
+	line-height: 0.66rem;
+}
+/*设置line的样式*/
+.tit_box .line{
+	width: 2rem;
+	border-bottom: 0.06rem solid #183884;
+	position: absolute;
+	left: 0.51rem;
+	bottom: 0;
+	transition: all 0.3s 0s;
+}
+/*设置shops_con的高、背景色、间距*/
+.shops_con{
+	box-sizing: border-box;
+	height: 3.9rem;
+	background-color: #fff;
+	padding: 0.35rem 0.2rem 0 0.2rem;
+	overflow: hidden;
+	position: relative;
+}
+/*隐藏横向滚动条*/
+.wrap::-webkit-scrollbar {
+    display: none;
+}
+/*设置wrap的样式*/
+.wrap{
+	width: 7.1rem;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	position: absolute;
+	left: 0.2rem;
+	top: 0.35rem;
+
+}
+/*设置shops的样式*/
+.shops{
+	width: 11.9rem;
+	justify-content: space-between;
+}
+/*设置shops下li的样式*/
+.shops li{
+	margin-right: 0.1rem;
+	text-align: center;
+	width: 2.3rem;
+	height: 3.18rem;
+	border: 0.01rem solid #e6e6e6;
+}
+.shops li:last-child{
+	margin-right: 0;
+}
+/*设置shops下img、p、a的样式*/
+.shops img{
+	width: 2.28rem;
+	height: 1.94rem;
+}
+.shops p{
+	margin-top: 0.1rem;
+	line-height: 0.5rem;
+	font-size: 0.26rem;
+	text-align: center;
+}
+.shops a{
+	display: inline-block;
+	width: 1.32rem;
+	height: 0.28rem;
+	line-height: 0.28rem;
+	border: 0.01rem solid #b3b3b3;
+	color: #b3b3b3;
+	font-size: 0.18rem;
+	text-align: center;
+}
+/*设置news的样式*/
+.news{
+	box-sizing: border-box;
+	height: 2.65rem;
+	padding: 0.3rem 0.2rem 0 0.2rem;
+	background-color: #fff;
+	margin: 0.1rem 0;
+}
+/*设置news_tit_box的样式*/
+.news_tit_box{
+	width: 100%;
+	height: 0.4rem;
+	border-bottom: 0.01rem solid #999;
+}
+/*设置h2的样式*/
+.news_tit_box h2{
+	height: 0.3rem;
+	line-height: 0.3rem;
+	font-size: 0.24rem;
+	color: #183884;
+	padding-left: 0.09rem;
+	border-left: 0.05rem solid #183884;
+}
+.news_tit_box h2 span{
+	font-size: 0.16rem;
+}
+/*设置news_tit_box下a的样式*/
+.news_tit_box a{
+	line-height: 0.3rem;
+	font-size: 0.2rem;
+	color: #183884;
+}
+/*设置news_box下li的样式*/
+.news_box li{
+	margin-top: 0.3rem;
+}
+.news_box li .iconfont{
+	font-size: 0.18rem;
+	line-height: 0.24rem;
+	color: #183884;
+	margin-right: 0.08rem;
+}
+.news_box li a{
+	display: inline-block;
+	font-size: 0.24rem;
+	line-height: 0.24rem;
+	width: 5.1rem;
+	color: #000;
+}
+.news_box li p{
+	font-size: 0.16rem;
+	color: #999;
+}
+/*设置foot的高、背景色、内间距*/
+.foot{
+	height: 1.3rem;
+	background-color: #fff;
+	padding-top: 0.2rem;
+}
+/*设置foot下ul的样式*/
+.foot ul{
+	display: flex;
+	justify-content: center;
+}
+.foot ul li{
+	display: flex;
+	align-items: center;
+	font-size: 0.22rem;
+	height: 0.32rem;
+}
+.foot ul li em{
+	display: inline-block;
+	height: 0.18rem;
+	border-right: 0.02rem solid #183884;
+	margin: 0 0.17rem;
+}
+.foot ul li a{
+	color: #183884;
+}
+.foot p{
+	text-align: center;
+	color: #b9b9b9;
+	line-height: 0.26rem;
+}
