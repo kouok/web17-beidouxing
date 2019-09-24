@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--viewport一定要加 user-scalable 值可以是yes|no或1|0 -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+    <!-- 禁止将数字转为号码 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 控制顶栏状态栏显示样式，可以为透明 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 添加一个网站图标，这样当你将网站添加到桌面图标时，会显示出来 -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="font/iconfont.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/TouchSlide.1.1.js"></script>
+    <script src="js/jquery.SuperSlide.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+    
+    <!-- 将px转rem的公式代码 -->
+    <!-- <script src="js/layer_mobile/layer.js"></script> -->
+    <!-- <script src="js/zepto.min.js"></script> -->
+
+    <title>北斗星通諆下企业</title>
+    <!-- 重置样式 -->
+
+
+    <!-- 将px转rem的公式代码 -->
+    <script>
+        var w = document.documentElement.getBoundingClientRect().width;
+        //7.5是根据设计图的大小除以100，需要按照你的实际设计图换算
+        var bili = w / 7.5;
+        document.documentElement.style.fontSize = bili + "px";
+
+        // 此时  100px=1rem
+        // 将所有在设计图量出的尺寸都除以100即可转为对应的rem
+    </script>
+
+<body>
+
+    <!-- 头部 -->
+
+    <!-- 遮罩层 -->
+    <div id="mask"></div>
+
+    <!-- 弹出框盒子 -->
+    <div id="layer">
+        <div class="triangle_up"></div>
+        <input type="text" name="" placeholder="请输入关键词" class="layer-inp">
+        <i class="iconfont layer-icon">&#xe62c;</i>
+    </div>
+
+
+    <!-- 弹出框值例表 -->
+    <div id="packing">
+        <div class="triangle_Dp"></div>
+        <ul class="menus">
+            <li class="menus-icon">
+                <i class="iconfont">&#xe60c;</i>
+                <span>首页</span>
+            </li>
+            <li class="menus-icon">
+                <i class="iconfont">&#xe6a5;</i>
+                <span>关于华信</span>
+            </li>
+            <li class="menus-icon">
+                <i class="iconfont">&#xe624;</i>
+                <span>产品中心</span>
+            </li>
+            <li class="menus-icon">
+                <i class="iconfont">&#xe6dc;</i>
+                <span>解决方案</span>
+            </li>
+            <li class="menus-icon">
+                <i class="iconfont">&#xe804;</i>
+                <span>公司新闻</span>
+            </li>
+            <li class="menus-icon">
+                <i class="iconfont">&#xe617;</i>
+                <span>人才招聘</span>
+            </li>
+            <li class="menus-icon">
+                <i class="iconfont">&#xe655;</i>
+                <span>联系我们</span>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- 主体 -->
+    <header class="head">
+        <img src="image/logo.jpg" alt="" class="logo">
+        <div class="fr">
+            <i class="iconfont icon-a" id="login">&#xe62c;</i>
+            <i class="iconfont icon-b" id="classify">&#xe656;</i>
+        </div>
+    </header>
+
+
+    <!-- 头部 -->
+
+    <!-- 轮播图 -->
+    <div id="slideBox" class="slideBox">
+        <div class="bd">
+            <ul>
+                <li>
+                    <a class="pic" href="#"><img src="image/slide1.jpg" /></a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="image/slide1.jpg" /></a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="image/slide1.jpg" /></a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="image/slide1.jpg" /></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hd">
+            <ul></ul>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+
+
+    <!-- 产品中心 -->
+    <div class="quality">
+        <ul class="quality-bt clearfix">
+            <li class="quality-at fl">
+                <div class="quality-box">
+                    <p class="quality-ct">
+                        <i class="iconfont quality-icon">&#xe6a5;</i>
+                    </p>
+                    <p class="quality-tetx">关于华信</p>
+                </div>
+            </li>
+            <li class="quality-at fl quality-bore">
+                <div class="quality-box">
+                    <p class="quality-dt">
+                        <i class="iconfont quality-icon">&#xe624;</i>
+                    </p>
+                    <p class="quality-tetx">产品中心</p>
+                </div>
+            </li>
+            <li class="quality-at fl quality-borea">
+                <div class="quality-box">
+                    <p class="quality-et">
+                        <i class="iconfont quality-icon">&#xe6dc;</i>
+                    </p>
+                    <p class="quality-tetx">解决方案</p>
+                </div>
+            </li>
+            <li class="quality-at fl">
+                <div class="quality-box">
+                    <p class="quality-ft">
+                        <i class="iconfont quality-icon">&#xe655;</i>
+                    </p>
+                    <p class="quality-tetx">联系我们</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 产品中心 -->
+
+
+    <!-- 热点新闻 -->
+    <div class="journalism clearfix">
+        <div class="journalism-left fl">
+            <b>热点新闻</b>
+            <i class="journalism-ac">|</i>
+            <i class="iconfont journalism-icon">&#xe67a;</i>
+        </div>
+        <div class="journalism-rights">
+            <span>UFirebird战略合作发布，打响北斗低功耗物<br>联网第一弹</span>
+        </div>
+    </div>
+    <!-- 热点新闻 -->
+
+
+    <!-- 数伟天台 -->
+    <div class="slideTxtBox">
+        <div class="hd">
+            <!-- 左右箭头 -->
+            <span class="arrow"><a class="next">&lt;</a><a class="prev">&gt;</a></span>
+            <ul class="hd-er clearfix">
+                <li class="fl">高精度定位天线</li>
+                <li class="hd-mar fl">数传天台</li>
+                <li class="fl">卫星通信</li>
+            </ul>
+        </div>
+        <div class="bd">
+            <ul class="bd-box clearfix">
+                <li class="fl">
+                    <img src="image/tianxian3.jpg" alt="">
+                    <span>3D基准站天线</span>
+                    <p class="bd-pbox">
+                        查看详情>>
+                    </p>
+                </li>
+                <li class="bd-kx fl">
+                    <img src="image/tianxian2.jpg" alt="">
+                    <span>2D基准站天线</span>
+                    <p class="bd-pbox">
+                        查看详情>>
+                    </p>
+                </li>
+                <li class="fl">
+                    <img src="image/tianxian1.jpg" alt="">
+                    <span>无人机天线</span>
+                    <p class="bd-pbox">
+                        查看详情>>
+                    </p>
+                </li>
+            </ul>
+            <ul class="bd-box clearfix">
+                <li class=" fl">
+                    <img src="image/tianxian1.jpg" alt="">
+                    <span>3D基准站天线</span>
+                    <p class="bd-pbox">
+                        查看详情>>
+                    </p>
+                </li>
+                <li class="bd-kx fl">
+                    <img src="image/tianxian3.jpg" alt="">
+                    <span>2D基准站天线</span>
+                    <p class="bd-pbox">
+                        查看详情>>
+                    </p>
+                </li>
+                <li class="fl">
+                    <img src="image/tianxian3.jpg" alt="">
+                    <span>无人机天线</span>
+                    <p class="bd-pbox">
+                        查看详情>>
+                    </p>
+                </li>
+            </ul>
+            <ul class="bd-box clearfix">
+                <li class="fl">
+                    <img src="image/tianxian1.jpg" alt="">
+                    <span>3D基准站天线</span>
+                    <p class="bd-pbox">
+                        查看详情>>
+                    </p>
+                </li>
+                <li class="bd-kx fl">
+                    <img src="image/tianxian1.jpg" alt="">
+                    <span>2D基准站天线</span>
+                    <p class="bd-pbox">
+                        查看详情>>
+                    </p>
+                </li>
+                <li class="fl">
+                    <img src="image/tianxian3.jpg" alt="">
+                    <span>无人机天线</span>
+                    <p class="bd-pbox">
+                        查看详情>>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- 数伟天台 -->
+
+    <!-- 新闻中心 -->
+    <div class="joulism">
+        <ul class="clearfix">
+            <li class="joulism-ts clearfix">
+                <p class="joulism-he fl">
+                    <i>|</i>
+                    <span>新闻中心</span>
+                    <b>/NEWS CENTER</b>
+                </p>
+                <p class="joulism-fr fr">
+                    查看更多 >>
+                </p>
+            </li>
+            <li class="joulism-oli clearfix">
+                <p class="joulism-oliA fl">
+                    <i class="iconfont">&#xe62e;</i>
+                    <span>RTK电台哪家强？eRadio™智能电台大比测</span>
+                </p>
+                <p class="joulism-oliB fr">
+                    2018-07-16
+                </p>
+            </li>
+            
+            <li class="joulism-oli clearfix">
+                <p class="joulism-oliA fl">
+                    <i class="iconfont">&#xe62e;</i>
+                    <span>共建北斗新时代丨华信亮相第九届中国卫星导航...</span>
+                </p>
+                <p class="joulism-oliB fr">
+                    2018-07-16
+                </p>
+            </li>
+            <li class="joulism-oli clearfix">
+                <p class="joulism-oliA fl">
+                    <i class="iconfont">&#xe62e;</i>
+                    <span>创新•融合丨华信引领高精度天线进入全网通时代</span>
+                </p>
+                <p class="joulism-oliB fr">
+                    2018-07-16
+                </p>
+            </li>
+        </ul>
+    </div>
+    <!-- 新闻中心 -->
+
+    <!-- 底部 -->
+    <div class="base">
+        <p class="base-blue">
+            人才招聘<i>|</i>
+            留言反馈<i>|</i>
+            友情链接
+        </p>
+        <p class="base-hhh">翻版必究 粤ICP备09221680号</p>
+        <p class="base-hhh">Copyright © 2012 深圳市华信天线技术有限公司</p>
+    </div>
+    <!-- 底部 -->
+
+    <script src="js/index.js"></script>
+    <script type="text/javascript">jQuery(".slideTxtBox").slide();</script>
+</body>
+
+</html>
