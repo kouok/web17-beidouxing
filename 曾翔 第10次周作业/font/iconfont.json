@@ -1,0 +1,79 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "584278",
+      "name": "搜索",
+      "font_class": "iconfontsousuo1",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "1010145",
+      "name": "新闻",
+      "font_class": "xinwen",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "1093818",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "1906542",
+      "name": "扳手-0-01",
+      "font_class": "banshou001",
+      "unicode": "e506",
+      "unicode_decimal": 58630
+    },
+    {
+      "icon_id": "2099196",
+      "name": "招聘人才",
+      "font_class": "zhaopinrencai",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "2579914",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "3598607",
+      "name": "消息",
+      "font_class": "xiaoxi1",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "5974808",
+      "name": "产品",
+      "font_class": "chanpin",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "6286969",
+      "name": " 酒店",
+      "font_class": "jiudian",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "10231236",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e6e9",
+      "unicode_decimal": 59113
+    }
+  ]
+}
