@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0.16rem;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+input,
+button {
+    border: none;
+    outline: none;
+}
+/* 页面第一行 样式开始 */
+.nav {
+    padding: 0.19rem 0 0.23rem 0.31rem;
+    width: 100%;
+    line-height: 0.64rem;
+}
+.nav img {
+    width: 1.5rem;
+    height: 0.55rem;
+    float: left;
+}
+.nav .searchAndList {
+    float: right;
+}
+.searchAndList span {
+    margin-right: 0.25rem;
+    padding: 0.1rem;
+    font-size: 0.4rem;
+    color: #004098;
+    font-weight: 600;
+}
+/* 遮罩层 */
+.masked {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .2);
+    z-index: 5;
+}
+/* 遮罩层内搜索框 */
+.masked .searchClick {
+    display: none;
+    position: absolute;
+    top: 1.31rem;
+    left: 0.2rem;
+    padding: 0 0.19rem;
+    width: 7.1rem;
+    height: 0.77rem;
+    line-height: 0.77rem;
+    border-radius: 0.1rem;
+    background-color: white;
+    z-index: 10;
+}
+.masked .searchClick:after {
+    content: "";
+    position: absolute;
+    top: -0.3rem;
+    right: 1.1rem;
+    width: 0;
+    height: 0;
+    border-width: 0.15rem;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+.searchClick .searchContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.searchContent input {
+    padding: 0.1rem;
+    width: 6.72rem;
+    height: 0.45rem;
+    border-bottom: 0.01rem solid #d1d1d1;
+}
+.searchContent .searchIcon {
+    position: absolute;
+    top: 0;
+    right: 0.1rem;
+    font-size: 0.4rem;
+    font-weight: 600;
+    color: #9b9b9b;
+}
+/* 点击出现菜单栏 */
+.masked .listClick {
+    display: none;
+}
+.listClick .aboutList {
+    position: absolute;
+    top: 1.31rem;
+    right: 0.2rem;
+    background-color: white;
+    z-index: 10;
+}
+.masked .aboutList:after {
+    content: "";
+    position: absolute;
+    top: -0.3rem;
+    right: 0.25rem;
+    width: 0;
+    height: 0;
+    border-width: 0.15rem;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+.aboutList li {
+    padding: 0 0.4rem;
+    line-height: 0.41rem;
+    border-bottom: 0.01rem solid #e6e6e6;
+}
+.aboutList li a {
+    color: #999;
+}
+.aboutList li i {
+    margin-right: 0.1rem;
+    font-size: 0.28rem;
+}
+/* 页面第一行 样式结束 */
+
+/* 页面第二行 轮播图 开始 */
+.slideBox {
+    position: relative;
+    overflow: hidden;
+    max-width: 7.5rem;
+    /* 设置焦点图最大宽度 */
+}
+.slideBox .bd {
+    position: relative;
+    z-index: 0;
+}
+.slideBox .bd li {
+    position: relative;
+    text-align: center;
+}
+.slideBox .bd li img {
+    background: url(img/loading.gif) center center no-repeat;
+    vertical-align: top;
+    width: 7.5rem;
+    height: 5rem;
+    /* 图片宽度100%，达到自适应效果 */
+}
+.slideBox .bd li a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 去掉链接触摸高亮 */
+.slideBox .bd li .tit {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-indent: 0.1rem;
+    height: 0.28rem;
+    line-height: 0.28rem;
+    background: url(img/focusBg.png) repeat-x;
+    color: #fff;
+    text-align: left;
+}
+/* 小圆点 */
+.slideBox .hd {
+    position: absolute;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    bottom: 0.3rem;
+    right: 3.05rem;
+    z-index: 1;
+}
+.slideBox .hd li {
+    display: inline-block;
+    width: 0.22rem;
+    height: 0.22rem;
+    -webkit-border-radius: 0.22rem;
+    -moz-border-radius: 0.22rem;
+    border-radius: 0.22rem;
+    background-color: white;
+    border: 0.02rem solid #183884;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin: 0 0.06rem;
+}
+.slideBox .hd li.on {
+    background-color: #183884;
+}
+/* 页面第二行轮播图 结束 */
+
+/* 页面第三行 开始 */
+.icon {
+    width: 100%;
+}
+.icon li {
+    float: left;
+    padding: 0.45rem 0.45rem 0.34rem;
+    text-align: center;
+    border-right: 0.01rem solid #e6e6e6;
+    border-bottom: 0.1rem solid #e6e6e6;
+}
+.icon :last-child {
+    border-right: none;
+}
+.icon li .iconLogo {
+    width: 0.92rem;
+    height: 0.92rem;
+    line-height: 0.92rem;
+    text-align: center;
+    color: white;
+    border-radius: 0.1rem;
+}
+.iconLogo i {
+    font-size: 0.5rem;
+}
+.icon .blueLogo {
+    background-color: #28b1f9;
+}
+.icon .orangeredLogo {
+    background-color: #ff8d3a;
+}
+.icon .greenLogo {
+    background-color: #6fd700;
+}
+.icon .redLogo {
+    background-color: #ff6868;
+}
+.icon .iconName {
+    margin-top: 0.1rem;
+    font-size: 0.24rem;
+    color: #333;
+}
+/* 页面第三行 结束 */
+
+/* 页面第四行 开始 */
+.hotNews {
+    width: 100%;
+    padding: 0.34rem 0.33rem 0.34rem 0.41rem;
+    border-bottom: 0.1rem solid #e6e6e6;
+}
+.hotNews h3 {
+    float: left;
+    padding-right: 0.2rem;
+    color: #f10f1a;
+    font-size: 0.3rem;
+    border-right: 0.02rem solid #ccc;
+}
+.hotNews .minuteNews {
+    float: left;
+    margin: -0.1rem 0 0 0.2rem;
+}
+.minuteNews i {
+    float: left;
+    margin: 0.13rem 0.08rem 0 0;
+    font-size: 0.3rem;
+    color: #f10f1a;
+}
+.minuteNews .newsContent {
+    float: left;
+    font-size: 0.24rem;
+    color: #666;
+}
+/* 页面第四行 结束 */
+
+/* 页面第五行 开始 */
+.slideTxtBox {
+    position: relative;
+    padding-bottom: 0.4rem;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 0.1rem solid #e6e6e6;
+}
+/* 商品tab头部 */
+.slideTxtBox .hd .productName { 
+    padding-top: 0.29rem;
+    border-bottom: 0.02rem solid #ccc;  
+}
+.productName li {
+    float: left;
+    margin: 0 0.45rem -0.03rem 0.75rem;
+    padding-bottom: 0.15rem;
+    color: #183884;
+    font-size: 0.26rem;
+}
+.productName li.on { 
+    border-bottom: 0.05rem solid #183884;
+}
+/* 左右箭头 */
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    padding: 0 0.3rem;
+    z-index: 10;
+}
+.arrow a {
+    width: 0.3rem;
+    height: 0.87rem;
+    line-height: 0.87rem;
+    text-align: center;
+    color: white;
+    font-size: 0.3rem;
+    border-radius: 0.05rem;
+}
+.arrow .next {
+    float: right;
+    background-color: #183884;
+}
+.arrow .prev {
+    float: left;
+    background-color: #b3b3b3;
+}
+/* 商品页部分 */
+.slideTxtBox .bd {
+    position: relative;
+    margin-top: 0.33rem;
+    padding: 0 0.18rem;
+    width: 100%;
+    overflow: hidden;
+}
+.slideTxtBox .bd ul { 
+    width: 17.55rem;
+    height: 3.22rem;
+    overflow: hidden;
+    zoom:1;  
+}
+.slideTxtBox .bd li {
+    float: left;
+    margin-right: 0.09rem;
+    padding-bottom: 0.27rem;
+    float: left;
+    text-align: center;
+    border: 0.01rem solid #e6e6e6; 
+}
+.slideTxtBox .bd .InfoThree {
+    margin-right: 0.18rem;
+}
+.slideTxtBox .bd img {
+    width: 2.3rem;
+    height: 1.95rem;
+}
+.slideTxtBox .bd li p {
+    margin: 0.28rem 0 0.13rem;
+    font-size: 0.22rem;
+}
+.slideTxtBox .bd li a {
+    padding: 0.05rem 0.18rem;
+    font-size: 0.18rem;
+    color: #999;
+    border: 0.01rem solid #b3b3b3;
+}
+/* 页面第五行 结束 */
+
+/* 页面第六行 开始 */
+.newsCenter {
+    padding: 0.28rem 0.2rem 0.38rem;
+    width: 100%;
+    border-bottom: 0.1rem solid #e6e6e6;
+}
+.newsCenter .newsTitle {
+    padding-bottom: 0.1rem;
+    color: #183884;
+}
+.newsTitle .spreadhead {
+    float: left;
+    padding-left: 0.1rem;
+    font-size: 0.26rem;
+    border-left: 0.05rem solid #183884;
+}
+.newsTitle .crosshead {
+    float: left;
+    margin-top: 0.1rem;
+}
+.newsTitle .newsMore {
+    float: right;
+    margin-top: 0.1rem;
+}
+.newsCenter .newsList {
+    margin-top: 0.3rem;
+}
+.newsList i {
+    float: left;
+    color: #183884;
+}
+.newsList .newsCharacter {
+    float: left;
+    margin-left: 0.1rem;
+    color: #333;
+}
+.newsList .newsTime {
+    float: right;
+    color: #b9b9b9;
+}
+/* 页面第六行 结束 */
+
+/* 页面第七行 开始 */
+.footer {
+    padding: 0.25rem;
+    width: 100%;
+    text-align: center;
+}
+.footerLinks a {
+    padding: 0 0.16rem;
+    color: #183884;
+    border-right: 0.01rem solid #4e67a1;
+}
+.footerLinks :last-child {
+    border-right: none;
+}
+.footer p {
+    margin-top: 0.13rem;
+    color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+/* 页面第七行 结束 */
