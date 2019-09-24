@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>北斗星</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="font/iconfont.css">
+    <script src="js/TouchSlide.1.1.js"></script>
+    <script>
+        (function(){
+            var w=document.documentElement.getBoundingClientRect().width;
+            var bili=w/7.5;
+            // 赋值给html;
+            document.documentElement.style.fontSize=bili+"px";
+        })();
+    </script>
+</head>
+<body>
+    <!-- 遮罩层 -->
+    <div class="msk"></div>
+    <header>
+        <div class="header-top">
+            <img src="images/img_03.jpg" alt="" class="logo">
+            <div class="font-w">
+                <span class="iconfont blue mr-24" id="search">&#xe646;</span>
+                <span class="iconfont blue" id="muen">&#xe6e9;</span>
+            </div>
+        </div>
+        <!-- 使用定位 把搜索框定位在遮罩层的上方 -->
+        <div class="seacher-box">
+            <div class="header-seacher">
+                <input type="text" placeholder="请输入关键字">
+                <a href="#">
+                    <span class="iconfont brown  search2">&#xe646;</span>
+                </a>
+                <!-- 小三角形 -->
+                <span class="san"></span>
+            </div>
+        </div>
+        <!-- 菜单栏的下拉框 -->
+        <div class="list-muen">
+            <div class="muen-box">
+                <!-- 小三角形 -->
+                <span class="san2"></span>
+                <ul class="olist">
+                    <li class="olist2">
+                        <span class="iconfont ">&#xe644;</span>
+                        <span class="font-color">首页</span>
+                    </li>
+                    <li>
+                        <span class="iconfont ">&#xe501;</span>
+                        <span class="font-color">关于华信</span>
+                    </li>
+                    <li>
+                        <span class="iconfont ">&#xe60c;</span>
+                        <span class="font-color">产品中心</span>
+                    </li>
+                    <li>
+                        <span class="iconfont ">&#xe506;</span>
+                        <span class="font-color">解决方案</span>
+                    </li>
+                    <li>
+                        <span class="iconfont ">&#xe631;</span>
+                        <span class="font-color">公司新闻</span>
+                    </li>
+                    <li>
+                        <span class="iconfont ">&#xe60b;</span>
+                        <span class="font-color">人才招聘</span>
+                    </li>
+                    <li>
+                        <span class="iconfont ">&#xe61b;</span>
+                        <span class="font-color">联系我们</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- banner -->
+    <div id="slideBox" class="slideBox">
+        <div class="bd">
+            <ul>
+                <li>
+                    <a class="pic" href="#"><img src="images/banner_06.jpg" /></a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="images/banner_06.jpg"/></a>
+                    <!-- <a class="tit" href="#">日右翼游行纪念钓岛"国有化"周年</a> -->
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="images/banner_06.jpg"/></a>
+                    <!-- <a class="tit" href="#">女兵竞选美国小姐鼓励女性自强</a> -->
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="images/banner_06.jpg"/></a>
+                    <!-- <a class="tit" href="#">济南现“最窄人行道” 仅0.2米宽</a> -->
+                </li>
+            </ul>
+        </div>
+
+        <div class="hd">
+            <ul></ul>
+        </div>
+        <script type="text/javascript">
+            TouchSlide({ 
+                slideCell:"#slideBox",
+                titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                mainCell:".bd ul", 
+                effect:"leftLoop", 
+                autoPage:true,//自动分页
+                autoPlay:true //自动播放
+            });
+        </script>
+    </div>
+    <!-- 分类栏区域 -->
+    <div class="fen-muen">
+        <a href="#">
+            <!-- 内容图标 -->
+            <div class="cont-font">
+                <p class="iconfont ">&#xe501;</p>
+            </div>
+            <p class="font-cl">关于华信</p>
+        </a>
+        <a href="#">
+            <!-- 内容图标 -->
+            <div class="cont-font">
+                <p class="iconfont ">&#xe60c;</p>
+            </div>
+            <p class="font-cl">产品中心</p>
+        </a>
+        <a href="#">
+            <!-- 内容图标 -->
+            <div class="cont-font">
+                <p class="iconfont ">&#xe506;</p>
+            </div>
+            <p class="font-cl">解决方案</p>
+        </a>
+        <a href="#">
+            <!-- 内容图标 -->
+            <div class="cont-font">
+                <p class="iconfont ">&#xe61b;</p>
+            </div>
+            <p class="font-cl">联系我们</p>
+        </a>
+    </div>
+    <!-- 分割线 -->
+    <div class="fen_line"></div>
+    <!-- 热点新闻 -->
+    <div class="news">
+        <p class="font-cl2">热点新闻</p>
+        <span class="iconfont news_font">&#xe640;</span>
+        <!-- 新闻播报列表 -->
+        <ul class="news_olist">
+            <li>UFirebird战略合作发布，打响北斗低功耗物联网第一弹</li>
+            <li>UFirebird战略合作发布，打响北斗低功耗物联网第二弹</li>
+            <li>UFirebird战略合作发布，打响北斗低功耗物联网第三弹</li>
+        </ul>
+    </div>
+    <!-- 分割线 -->
+    <div class="fen_line"></div>
+    <!-- table切换 -->
+    <div class="table_box">
+        <!-- 内容 -->
+        <div class="table_pd">
+            <ul>
+                <li class="on_line">
+                    <span class="blue">高精度定位天线</span>
+                </li>
+                <li>
+                    <span class="blue">数传电台</span>
+                </li>
+                <li>
+                    <span class="blue">卫星通信</span>
+                </li>
+            </ul>
+        </div>
+        <!-- 切换的面板内容 -->
+         <div class="cont-table-box wrap">
+            <div class="cont-table table_on">
+                <div class="card">
+                    <img src="images/img_09.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">3D基准站天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img_11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">2D基准站天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img_13.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">无人机天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img_09.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">3D基准站天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img_11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">2D基准站天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img_13.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">无人机天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cont-table2 table_on">
+                <div class="card">
+                    <img src="images/img_11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">3D基准站天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img_13.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">2D基准站天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img_09.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">无人机天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img_11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">3D基准站天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img_13.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">2D基准站天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img_09.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">无人机天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cont-table3 table_on">
+                <div class="card">
+                    <img src="images/img_13.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">3D基准站天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img_11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">2D基准站天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img_09.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">无人机天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img_13.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">3D基准站天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img_11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">2D基准站天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/img_09.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-title">无人机天线</p>
+                        <a href="#" class="btn">查看详情>></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 分割线 -->
+    <div class="fen_line"></div>
+    <!-- 新闻分类列表 -->
+    <div class="cont-news">
+        <div class="view-news-box">
+            <p class="cont-newCenter blue"><i></i>新闻中心/<span>NEWS CENTER</span></p>
+            <a href="#" class="cha-more">查看更多>></a>
+        </div>
+        <!-- 详细新闻分类 -->
+        <div class="view-olist-box">
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/images/dian_18.jpg" alt="">
+                        <a href="#">RTK电台哪家强？ eRadio<sup class="font-s">TM</sup>只能电台打比测</a>
+                    </div>
+                    <span class="font-cl3">2019-09-20</span>
+                </li>
+                <li class="pt30">
+                    <div class="text-olist cutFont">
+                        <img src="images/images/dian_18.jpg" alt="">
+                        <a href="#">共建北斗新时代 | 华信亮相第九届中国卫星导航重新出发</a>
+                    </div>
+                    <span class="font-cl3">2019-09-20</span>
+                </li>
+                <li class="pt30">
+                    <div class="text-olist cutFont">
+                        <img src="images/images/dian_18.jpg" alt="">
+                        <a href="#">创新·融合 | 华信引领高精度天线进入全网通时代</a>
+                    </div>
+                    <span class="font-cl3">2019-09-20</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 分割线 -->
+    <div class="fen_line"></div>
+    <!-- 底部 -->
+    <footer>
+        <div class="view-foot">
+            <ul class="view-foot-link">
+                <li><a href="#">人才招聘</a></li>
+                <li><a href="#">留言反馈</a></li>
+                <li><a href="#">友情链接</a></li>
+            </ul>
+            <!-- 文字说明 -->
+            <p class="font-cl4">翻版必究 粤ICP备09221680号</p>
+            <p class="font-cl4">Copyright&copy;2012 深圳市华信天线技术有限公司</p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
