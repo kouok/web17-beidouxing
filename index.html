@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+    <!--viewport一定要加 user-scalable 值可以是yes|no或1|0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+    <!-- 禁止将数字转为号码 -->
+    <meta name="format-detection" content="telephone=no" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<script>
+		(function(){
+			var w=document.documentElement.getBoundingClientRect().width;
+			var bili=w/7.5;
+			document.documentElement.style.fontSize=bili+"px";
+		})();
+	</script>
+	<script src="js/TouchSlide.1.1.js"></script>
+</head>
+<body>
+	<header>
+		<div class="head">
+			<img src="image/logo.png" alt="logo">
+			<div class="right">
+				<p class="iconfont icon-sousuo fl"></p>
+				<p class="iconfont icon-list fl"></p>
+			</div>
+            <!-- <div class="list1">
+                <ul>
+                    <li>
+                        <p class="iconfont icon-3shouye">&nbsp;首页</p>
+                    </li>
+                    <li>
+                        <p class="iconfont icon-jiudian">&nbsp;关于华信</p>
+                    </li>
+                    <li>
+                        <p class="iconfont icon-chanpinzhongxin">&nbsp;产品中心</p>
+                    </li>
+                    <li>
+                        <p class="iconfont icon-jiejuefangansvg">&nbsp;解决方案</p>
+                    </li>
+                    <li>
+                        <p class="iconfont icon-gongsixinwen">&nbsp;公司新闻</p>
+                    </li>
+                    <li>
+                        <p class="iconfont icon-zhaopin1">&nbsp;人才招聘</p>
+                    </li>
+                    <li>
+                        <p class="iconfont icon-xiaoxi">&nbsp;联系我们</p>
+                    </li>
+                </ul>
+            </div> -->
+		</div>
+	</header>
+<!--     <div class="sousk">
+        <input type="text" name="">
+        <p class="iconfont icon-sousuo"></p>
+    </div> -->
+	<!-- 轮播图 -->
+	<div id="slideBox" class="slideBox">
+        <div class="bd">
+            <ul>
+                <li>
+                    <a class="pic" href="#"><img src="image/slide1.jpg"></a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="image/slide1.jpg"></a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="image/slide1.jpg"></a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="image/slide1.jpg"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="hd">
+            <ul></ul>
+        </div>
+    </div>
+    <!-- 关于华信、产品中心、解决方案、联系我们 -->
+    <div class="centerbox">
+        <a href="#">
+            <div class="gy_box">
+                <p class="iconfont icon-jiudian"></p>
+            </div>
+            关于华信
+        </a>
+        <a href="#" class="boderl">
+            <div class="cp_box">
+                <p class="iconfont icon-chanpinzhongxin"></p>
+            </div>
+            产品中心
+        </a>
+        <a href="#" class="boderl">
+            <div class="jj_box">
+                <p class="iconfont icon-jiejuefangansvg"></p>
+            </div>
+            解决方案
+        </a>
+        <a href="#" class="boderl">
+            <div class="lx_box">
+                <p class="iconfont icon-xiaoxi"></p>
+            </div>
+            联系我们
+        </a>
+    </div>
+    <!-- 隔开条 -->
+    <div class="gtiao"></div>
+    <!-- 热点新闻 -->
+    <div class="hotnew">
+        <div class="hotleft">
+            <p>热点新闻</p>
+        </div>
+        <div class="hotright">
+            <p class="iconfont icon-yinliang fl"></p>
+            <ul>
+                <li>UFlirebird战略合作发布，打响北斗低功耗物联网第一弹</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 隔开条 -->
+    <div class="gtiao"></div>
+    <!-- tab切换 -->
+    <div class="tabqh">
+        <ul class="notice-hd">
+            <li class="onbt">高精度定位天线</li>
+            <li>数传电台</li>
+            <li>卫星通信</li>
+        </ul>
+        <div class="notice-bd">
+            <ul class="oul">
+                <li class="fl">   
+                    <img src="image/tianxian1.jpg">
+                    <p>3D基准站天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+                <li class="fl">   
+                    <img src="image/tianxian2.jpg">
+                    <p>2D基准站天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+                <li class="fl">   
+                    <img src="image/tianxian3.jpg">
+                    <p>无人机天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+                <li class="fl">   
+                    <img src="image/tianxian2.jpg">
+                    <p>2D基准站天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+                <li class="fl">   
+                    <img src="image/tianxian1.jpg">
+                    <p>3D基准站天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+                <li class="fl">   
+                    <img src="image/tianxian3.jpg">
+                    <p>无人机天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+            </ul>
+            <ul style="display: none;" class="oul">
+                <li class="fl">   
+                    <img src="image/tianxian3.jpg">
+                    <p>3D基准站天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+                <li class="fl">   
+                    <img src="image/tianxian1.jpg">
+                    <p>2D基准站天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+                <li class="fl">   
+                    <img src="image/tianxian2.jpg">
+                    <p>无人机天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+                <li class="fl">   
+                    <img src="image/tianxian2.jpg">
+                    <p>2D基准站天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+                <li class="fl">   
+                    <img src="image/tianxian1.jpg">
+                    <p>3D基准站天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+                <li class="fl">   
+                    <img src="image/tianxian3.jpg">
+                    <p>无人机天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+            </ul>
+            <ul style="display: none;" class="oul">
+                <li class="fl">   
+                    <img src="image/tianxian1.jpg">
+                    <p>3D基准站天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+                <li class="fl">   
+                    <img src="image/tianxian2.jpg">
+                    <p>2D基准站天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+                <li class="fl">   
+                    <img src="image/tianxian3.jpg">
+                    <p>无人机天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+                <li class="fl">   
+                    <img src="image/tianxian2.jpg">
+                    <p>2D基准站天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+                <li class="fl">   
+                    <img src="image/tianxian1.jpg">
+                    <p>3D基准站天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+                <li class="fl">   
+                    <img src="image/tianxian3.jpg">
+                    <p>无人机天线</p>
+                    <a href="#">查看详情>></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 隔开条 -->
+    <div class="gtiao"></div>
+    <!-- 新闻中心 -->
+    <div class="news">
+        <div>新闻中心<span>/NEWS CENTER</span></div>
+        <a href="#">查看更多>></a>
+    </div>
+    <!-- 新闻内容 -->
+    <div class="newnr">
+        <div class="iconfont icon-CombinedShape">
+            <span>RTK电台哪家强？eRadio™智能电台大比测</span></div>
+        <div class="timec">2018-07-16</div>
+    </div>
+    <div class="newnr">
+        <div class="iconfont icon-CombinedShape">
+            <span>共建北斗新时代丨华信亮相第九届中国卫星导航...</span></div>
+        <div class="timec">2018-07-16</div>
+    </div>
+    <div class="newnr pb_3">
+        <div class="iconfont icon-CombinedShape">
+            <span>创新•融合丨华信引领高精度天线进入全网通时代</span></div>
+        <div class="timec">2018-07-16</div>
+    </div>
+    <!-- 隔开条 -->
+    <div class="gtiao"></div>
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="lianjie">
+            <a href="#" class="boderr">人才招聘</a>
+            <a href="#" class="boderr">留言反馈</a>
+            <a href="#">友情链接</a>
+        </div>
+        <p>翻版必究 粤ICP备09221680号</p>
+        <p class="mt_23">Copyright © 2012 深圳市华信天线技术有限公司</p>
+    </div>
+   
+   <script>
+            TouchSlide({ 
+            slideCell:"#slideBox",
+            titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+            mainCell:".bd ul", 
+            effect:"leftLoop", 
+            autoPage:true,//自动分页
+            autoPlay:true //自动播放
+        });
+
+        // tips，table栏js
+    function tabs(tabTit,tabBd,eventType){
+    var oTit=document.getElementsByClassName(tabTit)[0];
+    // 通过父级获得了标题下面的五个按钮li
+    var oTitList=oTit.children;
+    console.log(oTitList);
+    var oBd=document.getElementsByClassName(tabBd)[0];
+    // 通过父级获得5个面板
+    var oBdList=oBd.children;
+    console.log(oBdList);
+    // 给标题li循环绑定点击，鼠标移入等事件
+    for(var i=0;i<oTitList.length;i++){
+        //给标题列表项添加索引，一一对应他们的显示位置，间接也与面板顺序建立了关联
+        oTitList[i].index=i;
+        // 因为eventType参数传进来的是字符串，所以不能用点的方式，而是用中括号
+        oTitList[i][eventType]=function(){
+            // alert(111)
+            // 通过循环来遍历确定是否该元素就是当前点击的，如果是则加高亮样式，并且把对应位置的面板给显示
+            for(var j=0;j<oTitList.length;j++){
+                if(j==this.index){
+                    oBdList[this.index].style.display="flex";
+                    this.style.borderBottom="4px solid #004098";
+                //把不是当前点击的这个li全部隐藏
+                }else{
+                   oBdList[j].style.display="none";
+                   oTitList[j].style.borderBottom="";
+                }
+            }
+            
+        }
+    } 
+}
+tabs("notice-hd","notice-bd","onclick");
+   </script>
+</body>
+</html>
